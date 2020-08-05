@@ -42,22 +42,12 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.msm8953.recovery
-
-PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl.recovery \
     bootctrl.msm8953 \
+    bootctrl.msm8953.recovery
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.msm8953 \
-    libcutils \
-    libgptutils.tissot.recovery \
-    libz
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
